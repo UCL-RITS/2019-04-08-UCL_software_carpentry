@@ -15,6 +15,7 @@ instructor: ["Vilma Agalioti-Sgompou", "Tom Dowrick", "Anastasis Georgoulas", "S
 helper: ["Mose Giordano", "Stephen Henderson", "Matthew Gillman", "Miracle Abiola", "Melissa Leija Salazar", "David Pérez-Suárez"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["rc-softdev@ucl.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: "https://pad.carpentries.org/2019-04-08-UCL"              # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes_backup: "./2019-04-08-UCL.html"
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -238,6 +239,13 @@ e.g., '2015-06-10-esu'.
   We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
+{% if page.collaborative_notes_backup %}
+<p id="collaborative_notes">
+  The <a href={{page.collaborative_notes_backup}}">collaborative notes taken during the workshop</a>.
+</p>
+{% endif %}
+
+
 
 <hr/>
 
