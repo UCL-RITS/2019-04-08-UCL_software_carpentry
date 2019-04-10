@@ -241,7 +241,7 @@ e.g., '2015-06-10-esu'.
 {% endif %}
 {% if page.collaborative_notes_backup %}
 <p id="collaborative_notes">
-  The <a href={{page.collaborative_notes_backup}}">collaborative notes taken during the workshop</a>.
+  The <a href="{{page.collaborative_notes_backup}}">collaborative notes taken during the workshop</a>.
 </p>
 {% endif %}
 
